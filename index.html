@@ -8,5 +8,14 @@
 <body>
     <h1>¡Hola! Bienvenido a la Plataforma de Residuos</h1>
     <p>Este es un primer test para subir la web a Azure.</p>
+    
+    <h2>Iniciar Sesión</h2>
+<button onclick="login()">Acceder con Azure</button>
+
+<script>
+    function login() {
+        window.location.href = "https://login.microsoftonline.com/3400f5cb-3a33-4b46-813e-0d11613500ab/oauth2/v2.0/authorize?client_id=60f72e71-2bf1-436f-909b-24d3b237e39a&response_type=token&redirect_uri=<REDIRECT_URI>&scope=openid&response_mode=fragment";
+    }
+</script>
 </body>
 </html>
